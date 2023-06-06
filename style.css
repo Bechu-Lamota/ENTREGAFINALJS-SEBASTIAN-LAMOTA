@@ -1,0 +1,299 @@
+/* GENERALES */
+body {
+	background-color: #FFF5FB;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	width: 221px;
+	height: 41px;
+}
+
+p {
+	margin: 0%;
+	padding: 0%;
+}
+
+input {
+	color: #999999;
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 15.5px;
+	line-height: 20px;
+}
+
+/* LOGO INICIO */
+.logoCentral {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 102px;
+}
+
+.lg-central {
+	width: 485px;
+	height: 237px;
+}
+
+/* SECCIONES */
+#miForm1 {
+	position: relative;
+	top: 100px;
+}
+
+#miForm2 {
+	position: relative;
+	top: 150px;
+}
+
+#miForm3 {
+	position: relative;
+	top: 50px;
+}
+
+/* FORMULARIOS */
+.columna {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 70px;
+}
+
+.cajonDato {
+	margin-top: 15px;
+	position: relative;
+	text-align: center;
+}
+
+.cajonCompletar {
+	text-align: center;
+}
+
+.cajonRedireccion {
+	position: relative;
+	text-align: center;
+}
+
+.recuperoContraseña {
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 12px;
+	color: #BE478E;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+}
+
+.txtLabel {
+	padding-left: 2%;
+	padding-top: 10px;
+	margin-bottom: 3px;
+	letter-spacing: 0.1em;
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: 200;
+	line-height: 20px;
+	color: #555555;
+}
+
+.rcproBx {
+	margin: 190px 100px;
+}
+
+.txtRecupero1 {
+	margin-bottom: 10px;
+	letter-spacing: 0.1em;
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: 200;
+	line-height: 30px;
+	font-size: 18.3px;
+	color: #555555;
+	text-align: center;
+}
+
+.txtRecupero2 {
+	letter-spacing: 0.1em;
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: 200;
+	line-height: 30px;
+	font-size: 18.3px;
+	color: #555555;
+	text-align: center;
+}
+
+/* BOTONES */
+.botonera {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 35px;
+}
+
+.botonRedireccionA {
+	padding: 7px 40px;	
+}
+
+.botonB {
+	padding: 7px 40px;
+}
+
+.recuperoContraseña {
+	background-color: transparent;
+	border: none;
+}
+
+.boxBtn{
+	display: flex;
+	justify-content: end;
+}
+
+.closeButton, .closeButton2 {
+	background-color: transparent;
+	border: none;
+	font-family: 'Outfit';
+	font-weight: 200;
+	font-size: 30px;
+	line-height: 20px;
+	color: #AFACAC;
+}
+.btnIngreso, .btnRecupero, .btnRegistro {
+	background-color: #BE478E;
+	border: 1px solid #BE478E;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 17.5px;
+	line-height: 20px;
+	color: #FEE7F5;
+	letter-spacing: 0.1em;
+}
+
+/* INICIO */
+#usuarioInicio {
+	height: 30px;
+	width: 70%;
+	background-color: #FFFFFF;
+	border: 1px solid #BE478E;
+	border-radius: 30px;
+	color: #555555;
+}
+
+#claveInicio {
+	height: 30px;
+	width: 70%;
+	background-color: #FFFFFF;
+	border: 1px solid #BE478E;
+	border-radius: 30px;
+	color: #555555;
+}
+
+/* REGISTRO */
+#usuarioRegistro {
+	height: 30px;
+	width: 70%;
+	background-color: #FFFFFF;
+	border: 1px solid #BE478E;
+	border-radius: 30px;
+	color: #555555;
+}
+
+#emailRegistro {
+	height: 30px;
+	width: 70%;
+	background-color: #FFFFFF;
+	border: 1px solid #BE478E;
+	border-radius: 30px;
+	color: #555555;
+}
+
+#contraseñaRegistro {
+	height: 30px;
+	width: 70%;
+	background-color: #FFFFFF;
+	border: 1px solid #BE478E;
+	border-radius: 30px;
+	color: #555555;
+}
+
+#clave2 {
+	height: 30px;
+	width: 70%;
+	background-color: #FFFFFF;
+	border: 1px solid #BE478E;
+	border-radius: 30px;
+	color: #555555;
+}
+
+/* EMAIL RECUPERO */
+#emailRecupero {
+	height: 30px;
+	width: 70%;
+	background-color: #FFFFFF;
+	border: 1px solid #BE478E;
+	border-radius: 30px;
+	color: #555555;
+}
+@media screen and (max-width: 700px) {
+	.cajonDato {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	#usuarioInicio {
+		width: 68%;
+	}
+
+	#claveInicio {
+		width: 68%;
+	}
+
+	#usuarioRegistro {
+		width: 68%;
+	}
+
+	#emailRegistro {
+		width: 68%;
+	}
+
+	#contraseñaRegistro {
+		width: 68%;
+	}
+
+	#clave2 {
+		width: 68%;
+	}
+
+	#emailRecupero {
+		width: 68%;
+	}
+	
+	button {
+		width: 211px;
+		height: 35px;
+	}
+
+	.btnIngreso,
+	.btnRecupero,
+	.btnRegistro {
+		font-size: 18px;
+	}
+
+	.botonera {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 20px;
+}
+
+}
+
+
+
+

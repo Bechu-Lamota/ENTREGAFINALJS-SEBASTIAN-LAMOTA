@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Gestion&Costos para contadores</title>
+</head>
+<body>
+	<!--Logo Central-->
+<div id="pgPrincipal">
+		<div class="logoCentral">
+			<img class="lg-central" src="./Group 6G&C.svg" alt="Logo de gestion y costos para contadores">
+		</div>
+
+<!-- Formulario de inicio de Sesion-->
+			<form id="miForm1">
+				<ul>
+					<li>
+						<div class="columna">
+							<div class="cajonDato">
+								<label class="txtLabel" for="usuarioInicio">Usuario</label>
+							</div>
+							<div class="cajonCompletar">
+								<input type="text" name="usuarioInicio" id="usuarioInicio">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="columna">
+							<div class="cajonDato">
+								<label class="txtLabel" for="claveInicio">Contraseña</label>
+							</div>
+							<div class="cajonCompletar">
+								<input type="password" name="claveInicio" id="claveInicio">
+							</div>
+							<div class="cajonRedireccion">
+								<button class="recuperoContraseña">Olvidé mi contraseña </button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="botonera">
+							<div class="botonRedireccionA">
+								<button type="submit" class="btnRegistro">Registrarme</button>
+							</div>
+							<div class="botonB">
+								<button type="submit" class="btnIngreso">Ingresar</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</form>
+</div>
+	<!--REGISTRO-->
+<div id="pgRegistro">
+		<div class="boxBtn">
+			<button class="closeButton">x</button>
+		</div>
+		<div class="logoCentral">
+			<img class="lg-central" src="./Group 6G&C.svg" alt="Logo de gestion y costos para contadores">
+		</div>
+		<form id="miForm2">
+			<ul>
+				<li>
+					<div class="columna">
+						<div class="cajonDato">
+							<label class="txtLabel" for="usuarioRegistro">Usuario</label>
+						</div>
+						<div class="cajonCompletar">						
+							<input type="text" name="usuarioRegistro" id="usuarioRegistro">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="columna">
+						<div class="cajonDato">
+							<label class="txtLabel" for="emailRegistro">Email</label>	
+						</div>
+						<div class="cajonCompletar">
+							<input type="email" name="emailRegistro" id="emailRegistro">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="columna">					
+						<div class="cajonDato">
+							<label class="txtLabel" for="contraseñaRegistro">Contraseña</label>
+						</div>
+						<div class="cajonCompletar">
+							<input type="password" name="contraseñaRegistro" id="contraseñaRegistro">
+						</div>
+					</div>	
+				</li>
+				<li>
+					<div class="columna">
+						<div class="cajonDato">
+							<label class="txtLabel" for="clave2">Repetir Contraseña</label>			
+						</div>
+						<div class="cajonCompletar">		
+							<input type="password" name="clave2" id="clave2">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="botonera">
+						<button type="submit" class="btnRegistro">Registrarme</button>
+					</div>
+				</li>
+			</ul>
+		</form>
+</div>
+	<!--RECUPERO DE CUENTA-->
+<div id="pgRecupero">
+	<div class="boxBtn">
+		<button class="closeButton2">x</button>
+	</div>
+	<div class="logoCentral">
+		<img class="lg-central" src="./Group 6G&C.svg" alt="Logo de gestion y costos para contadores">
+	</div>
+	<div class="rcproBx">
+		<p class="txtRecupero1">Esta solicitando el recupero de su cuenta por olvido de contraseña. A la brevedad, estará recibiendo un correo de recuperación al email asociado a la cuenta.</p>
+			<p class="txtRecupero2">Por favor, siga los pasos.</p>
+			<form id="miForm3">
+				<ul>
+					<li>
+						<div class="columna">
+							<div class="cajonDato">
+								<label class="txtLabel" for="emailRecupero">Email</label>
+							</div>
+							<div class="cajonCompletar">
+								<input type="text" name="emailRecupero" id="emailRecupero">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="botonera">
+							<button type="submit" class="btnRecupero">Recuperar</button>
+						</div>
+					</li>
+				</ul>
+			</form>
+		</div>
+</div>
+
+	<script src="./main.js"></script>
+</body>
+</html>
