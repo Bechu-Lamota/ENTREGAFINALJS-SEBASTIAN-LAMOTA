@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	  pgPrincipal.style.display = "none";
 	  pgRegistro.style.display = "block";
 	});
-  });
-  
+});
+
 
   //Primero el BOTON que lleva a recupero
 document.addEventListener("DOMContentLoaded", function () {
@@ -29,7 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	  pgPrincipal.style.display = "none";
 	  pgRecupero.style.display = "block";
 	});
-  });
+});
+
+
+
 
   // FORMULARIO
 document.addEventListener("DOMContentLoaded", function () {
@@ -64,28 +67,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-/*
-Este no esta funcando
-
-// Activo la funcion al BOTON CERRAR REGISTRO que cancela y lleva al INICIO
-document.addEventListener("DOMContentLoaded", function () {
-    let pgPrincipal = document.getElementById("pgPrincipal");
-    let pgRegistro = document.getElementById("pgRegistro");
-    let botonClose = document.querySelector(".closeButton");
-
-    //mantenemos oculto el registro al cargar la pagina
-    pgRegistro.style.display = "none";
-
-    botonClose.addEventListener("click", function () {
-        pgPrincipal.style.display = "block";
-        pgRegistro.style.display = "none";
-    });
-});
-
-    botonCerrar.addEventListener("click", function () {
-        pgPrincipal.style.display = "block";
-        pgRecupero.style.display = "none";
-    });
-*/
 
 

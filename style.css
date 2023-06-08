@@ -24,6 +24,7 @@ input {
 	font-weight: 200;
 	font-size: 15.5px;
 	line-height: 20px;
+	text-align: center;
 }
 
 /* LOGO INICIO */
@@ -153,7 +154,7 @@ input {
 	justify-content: end;
 }
 
-.closeButton, .closeButton2 {
+.closeButton, .closeButtonRecupero {
 	background-color: transparent;
 	border: none;
 	font-family: 'Outfit';
