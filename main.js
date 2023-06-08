@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // FORMULARIO
 document.addEventListener("DOMContentLoaded", function () {
+    let pgPrincipal = document.getElementById("pgPrincipal");
+	  let pgRegistro = document.getElementById("pgRegistro");
     let formularioRegistro = document.getElementById("miForm2");
 
     formularioRegistro.addEventListener("submit", function (event) {
@@ -61,10 +63,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		//Aca visualizamos los datos cargados
 		console.log(`Datos Almacenados en localStorage:`);
-        console.log(usuarios);
+    console.log(usuarios);
 
-       	formularioRegistro.reset();
+    setTimeout(function (){
+      verFormulario();
+    }, 1000); 
+    
+    function verFormulario() {
+      pgPrincipal.style.display = "block";
+      pgRegistro.style.display = "none";
+      formularioRegistro.reset();
+        }
     });
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let pgPrincipal = document.getElementById("pgPrincipal");
+  let pgRegistro = document.getElementById("pgRegistro");
+  let botonRegistro = document.querySelector(".cerrarBotonRegistro");
+
+  botonRegistro.addEventListener("click", function (event) {
+    event.preventDefault();
+    pgPrincipal.style.display = "block";
+    pgRegistro.style.display = "none";
+  });
 });
 
 

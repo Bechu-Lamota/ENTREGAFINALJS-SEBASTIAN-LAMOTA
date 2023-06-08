@@ -154,7 +154,7 @@ input {
 	justify-content: end;
 }
 
-.closeButton, .closeButtonRecupero {
+.cerrarBotonRegistro, .closeButtonRecupero {
 	background-color: transparent;
 	border: none;
 	font-family: 'Outfit';
