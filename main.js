@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+// BOTON CIERRE REGISTRO
 document.addEventListener("DOMContentLoaded", function () {
   let pgPrincipal = document.getElementById("pgPrincipal");
   let pgRegistro = document.getElementById("pgRegistro");
@@ -93,4 +93,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// BOTON CIERRE RECUPERO
+document.addEventListener("DOMContentLoaded", function () {
+  let pgPrincipal = document.getElementById("pgPrincipal");
+  let pgRecupero = document.getElementById("pgRecupero");
+  let botonRecupero = document.querySelector(".cerrarBotonRecupero");
 
+  botonRecupero.addEventListener("click", function (event) {
+    event.preventDefault();
+    pgPrincipal.style.display = "block";
+    pgRecupero.style.display = "none";
+  });
+});
