@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  // FORMULARIO
+  // FORMULARIO REGISTRO
 document.addEventListener("DOMContentLoaded", function () {
     let pgPrincipal = document.getElementById("pgPrincipal");
 	  let pgRegistro = document.getElementById("pgRegistro");
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let contraseñaRepetir = document.getElementById("clave2").value;
 
         //Los unifico
-        let usuarios = {
+        let nuevoUsuario = {
             usuario: usuario,
             email: email,
             contraseña: contraseña,
@@ -59,11 +59,11 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         //Los carga agrupados
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        localStorage.setItem("usuarios", JSON.stringify(nuevoUsuario));
 
 		//Aca visualizamos los datos cargados
 		console.log(`Datos Almacenados en localStorage:`);
-    console.log(usuarios);
+    console.log(nuevoUsuario);
 
     setTimeout(function (){
       verFormulario();
@@ -107,4 +107,83 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// BOTON INGRESO
+document.addEventListener("DOMContentLoaded", function() {
+  //Armo las variables
+  let formularioIngreso = document.getElementById("miForm1");
+  let usuarioInput = document.getElementById("usuarioInicio");
+  let claveInput = document.getElementById("claveInicio");
 
+  //Agrego el evento
+  let botonIngreso = document.getElementsByClassName("btnIngreso")[0];
+  botonIngreso.addEventListener("click", async function(event) {
+    event.preventDefault();
+
+    let usuario = usuarioInput.value;
+    let clave = claveInput.value;
+
+    //  Verificamos que los campos se completaron
+    if (usuario.trim() === [] || clave.trim() === []) {
+          return;
+          };
+      
+      // USAMOS FETCH PARA VERIFICAR QUE LOS USUARIOS CORRESPONDEN A NUESTRA DB
+      let respuesta = await fetch("./db.json")
+      let db = await respuesta.json();
+
+      const pedirDatos = db.find(function(user) {
+        return user.usuario === usuario && user.contraseña === clave;
+      })
+
+      // EXITO O ERROR
+      if (pedirDatos) {
+        Toastify({
+          text: "Excelente",
+          className: "toastifyFormato",
+          duration: 800,
+          style: {
+          background: "linear-gradient(to right, #15a027, #077e17)",
+          }
+          }).showToast();
+          formularioIngreso.reset();
+
+          // Lo guarda en el local y podemos ver por consola el dato del usuario
+          localStorage.setItem("usuario", usuario);
+          console.log("Usuario:", usuario)
+
+          } else {
+          Toastify({
+          text: "Error",
+          className: "toastifyFormato",
+          duration: 1500,
+          style: {
+          background: "linear-gradient(to right, #9e0202, #ca3838)",
+          }
+          }).showToast();
+          formularioIngreso.reset();
+
+          console.log("Usuario:", usuario)
+        }     
+      })
+  })
+
+
+
+
+  //  TOASTIFY RECUPERO
+document.addEventListener("DOMContentLoaded", function() {
+  let btnRecupero = document.getElementsByClassName("btnRecupero")[0];
+
+  btnRecupero.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    Toastify({
+      text: "ENVIADO",
+      className: "toastifyFormato",
+      duration: 2000,
+      style: {
+        background: "linear-gradient(to right, #f95ebb, #BE478E)",
+      }
+    }).showToast();
+  });
+});
