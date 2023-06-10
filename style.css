@@ -242,6 +242,34 @@ input {
 	border-radius: 30px;
 	color: #555555;
 }
+
+
+
+/* TOASTIFY */
+.toastifyRecupero {
+	border-radius: 30px;
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 17.5px;
+	line-height: 20px;
+	color: #FEE7F5;
+	letter-spacing: 0.1em;
+} 
+
+.toastifyIngreso {
+	border-radius: 30px;
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 17.5px;
+	line-height: 20px;
+	color: #FEE7F5;
+	letter-spacing: 0.1em;
+} 
+
+
+
 @media screen and (max-width: 700px) {
 	.cajonDato {
 		margin-left: 15%;
