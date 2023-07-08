@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //Los carga agrupados
         localStorage.setItem("usuarios", JSON.stringify(nuevoUsuario));
-        //Carga al JSON.
+        //Carga al JSON - FALTA
 
 		//Aca visualizamos los datos cargados
 		console.log(`Datos Almacenados en localStorage:`);
